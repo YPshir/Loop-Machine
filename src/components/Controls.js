@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useContext } from 'react'
 
-function Controls() {
+function Controls({currentPad}) {
     const [playing,setPlaying] = useState(false);
     const [dur,setDur] = useState(0);
     const [curr,setCurr] = useState(0);
@@ -32,6 +32,7 @@ function Controls() {
             onCanPlay = {(e)=> setDur(e.target.duration)}
             ref={audio}
             type="audio/mpeg"
+            src={currentPad[1]}
          />
         <div className="music-controlls">
             <span className="play" onClick={()=>{setPlaying(playing?0:1); toggle();}}>
