@@ -1,1 +1,3 @@
 export const SET_CURRENT_PAD = 'SET_CURRENT_PAD';
+export const TOGGLR_REPEAT = 'TOGGLR_REPEAT';
+export const TOGGLE_PLAYING = 'TOGGLE_PLAYING';

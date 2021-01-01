@@ -11,6 +11,15 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+.hide {
+  display: none;
+}
+
+.active{
+  color: rgb(32, 77, 104);
+}
+
 /* .selected{
 
 } */
