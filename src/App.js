@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useRef} from 'react';
+import Pads from './components/Pads';
+import Controls from './components/Controls';
+
+import './App.css'
 
 function App() {
+  const audio = useRef('audio_tag'); // use case for useRef is getting access to DOM nodes. 
+  const toggle = () =>{
+    if(audio.current.paused){
+      audio.current.play()
+    }else{
+      audio.current.pause()
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>LOOP MACHINE</h1>
+      <Pads />
+      <Controls toggle={toggle} />
     </div>
   );
 }
