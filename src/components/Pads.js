@@ -1,4 +1,5 @@
-import React , {useEffect,useState} from 'react';
+import React , {useContext,useState} from 'react';
+import playerContetx from '../context/PlayerContetx';
 // import {} from '../../public/samples/'
 // const padsList = () =>{
 //     let pads = [];
@@ -9,6 +10,7 @@ import React , {useEffect,useState} from 'react';
 // }
 
 function Pads({setCurrentPad}){
+    const {SetCurrent,currentPad} = useContext(playerContext);
     let i=0;
     const pads = [
         [
@@ -49,9 +51,6 @@ function Pads({setCurrentPad}){
         ]
     ]
     const [selected,setSelcted] = useState(0);
-    useEffect(()=>{
-        setCurrentPad(pads[0][1])
-    },[]);
     return(
         <div className="pads container mt-5 mb-5"> 
                 <div>

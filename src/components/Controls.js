@@ -1,10 +1,14 @@
-import React, { useState, useEffect, useRef, useContext } from 'react'
+import React, { useState, useEffect, useRef, useContext } from 'react';
+import playerContext from '../context/PlayerContetx';
+// import playerContetx from '../context/PlayerContetx';
 
-function Controls({currentPad}) {
+function Controls() {
+    const {SetCurrent,currentPad} = useContext(playerContext);
+
     const [playing,setPlaying] = useState(false);
     const [dur,setDur] = useState(0);
     const [curr,setCurr] = useState(0);
-    const [currentTime, setCurrentTime] = useState(0);
+    // const [currentTime, setCurrentTime] = useState(0);
     const audio = useRef('audio_tag');
 
     const fmtMSS = (s) => { return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + ~~(s) }
