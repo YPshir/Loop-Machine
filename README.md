@@ -3,7 +3,7 @@ Loop machine - written in ReactJS Hooks.
 // add gif
 
 ## Deploy
-[Link]()
+[Link](https://loop-machine-shir.herokuapp.com/)
 
 ## Description
 The Loop Machine containing a 9 pads each representing an audio sample which plays in an infinite loop Synchronously.  
