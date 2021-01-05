@@ -1,6 +1,6 @@
 # Loop-Machine
 Loop machine - written in ReactJS Hooks.  
-// add gif
+![Webp net-gifmaker (3)](https://user-images.githubusercontent.com/46241467/103707427-45960080-4fb7-11eb-8dc1-9bbbe29dbedb.gif)
 
 ## Deploy
 [Link](https://loop-machine-shir.herokuapp.com/)
