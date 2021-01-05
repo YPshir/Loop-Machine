@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // import react and Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
 import './Pads.css';
 import Pad from '../Pad/Pad';
-import {samples} from '../samples';
+import {samples} from '../../assets/samples'; // import samples - mp3 files - for the loop machine
 
 const Pads = () => {
+    
+    // Declare a new state variable - "playButton" and initializes it to false - represents the PLAY/PAUSE status of the Loop Machine
     const [playButton, setPlayButton] = useState(false);
 
     return (
