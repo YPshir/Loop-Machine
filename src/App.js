@@ -1,20 +1,15 @@
 import React from 'react';
-import Pads from './components/Pads';
-import Controls from './components/Controls';
-import PlayerState from './context/PlayerState';
+import './App.css';
+import Pads from '../src/components/Pads/Pads';
 
-import './App.css'
-
-function App() {
+const App = () => {
   return (
-    <PlayerState>
-      <div className="App">
-          <h1>LOOP MACHINE</h1>
-          {/* <audio onChange={(e)=> console.log(e)} ref={audio} type="audio/mpeg"></audio> */}
-          <Pads />
-          <Controls />
-      </div>
-    </PlayerState>
+    <div className='App'>
+      <h1><i className="fas fa-infinity"></i>Loop machine<i className="fas fa-infinity"></i></h1>
+      <div className="container">
+            <Pads />
+        </div>
+    </div>
   );
 }
 

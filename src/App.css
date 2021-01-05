@@ -1,36 +1,23 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
   text-align: center;
+  font-family: 'Courgette', cursive;
 }
 
-.controls{
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  background-color: grey;
-  /* color: aliceblue; */
-  align-items: center;
-  justify-content: space-evenly;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.hide {
-  display: none;
+body{
+  background-color: #E9E9E9;
+}
+h1{
+  font-size:4.5rem;
 }
 
-.active{
-  color: rgb(32, 77, 104);
+.fa-infinity{
+  font-size: 0.8em !important;
+  font-weight: 100;
 }
-
-/* .selected{
-
-} */
-
-/* .progress{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-}
-
-#progresBar{
-  background: transparent;
-} */
