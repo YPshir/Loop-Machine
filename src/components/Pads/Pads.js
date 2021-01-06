@@ -4,7 +4,7 @@ import Pad from '../Pad/Pad';
 import {samples} from '../../assets/samples'; // import samples - mp3 files - for the loop machine
 
 const Pads = () => {
-    
+
     // Declare a new state variable - "playButton" and initializes it to false - represents the PLAY/PAUSE status of the Loop Machine
     const [playButton, setPlayButton] = useState(false);
 
